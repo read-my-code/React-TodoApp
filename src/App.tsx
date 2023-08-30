@@ -195,7 +195,7 @@ export const App: React.FC = () => {
           />
         )}
 
-        {todosFromServer?.length && (
+        {!!todosFromServer?.length && (
           <Footer
             filterCondition={filterBy}
             visibleItemsCount={activeItemsCount}
